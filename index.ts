@@ -8,8 +8,8 @@ export default function (pi: ExtensionAPI) {
 	pi.registerShortcut("ctrl+p", {
 		description: "Open command palette",
 		handler: async (ctx) => {
-			// Just send "/" to trigger the built-in slash command autocomplete
-			ctx.sendUserMessage("/");
+			// Set editor to "/" which triggers slash command autocomplete
+			ctx.ui.setEditorText("/");
 		},
 	});
 }
