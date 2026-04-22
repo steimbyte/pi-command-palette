@@ -1,20 +1,29 @@
 # pi-command-palette
 
-Opens the slash command menu (same as typing `/`) via **Ctrl+P** shortcut.
+A floating command palette for pi-coding-agent via **Ctrl+P** shortcut.
+
+## Features
+
+- Floating centered TUI overlay
+- Search/filter commands by name
+- Keyboard navigation (↑↓ to navigate, Enter to select, Esc to close)
+- Fuzzy filtering as you type
 
 ## Setup
 
-### 1. Rebind Default Ctrl+P (Model Cycling)
+### 1. Rebind Default Ctrl+P Shortcuts
 
 Create/edit `~/.pi/agent/keybindings.json`:
 
 ```json
 {
-  "app.model.cycleForward": ["shift+ctrl+p"]
+  "app.model.cycleForward": ["shift+ctrl+p"],
+  "app.models.toggleProvider": ["ctrl+shift+p"],
+  "app.session.togglePath": ["ctrl+alt+p"]
 }
 ```
 
-This frees Ctrl+P by rebinding model cycling to Shift+Ctrl+P.
+This frees Ctrl+P by rebinding conflicting built-in shortcuts.
 
 ### 2. Install Extension
 
@@ -40,7 +49,7 @@ Update `~/.pi/agent/settings.json`:
 
 ## Usage
 
-Press **Ctrl+P** to open the command palette - same menu as typing `/` in the input.
+Press **Ctrl+P** to open the command palette. Type to filter, use arrow keys to navigate, Enter to execute.
 
 ## Repository
 
