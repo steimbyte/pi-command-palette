@@ -60,3 +60,9 @@ Press **Ctrl+P** to open the command palette. Type to filter, use arrow keys to 
 ## Repository
 
 https://github.com/alephtex/pi-command-palette
+
+---
+
+## Hinweis zur KI-Unterstützung
+
+Bei der Entwicklung dieses Projekts wurden teilweise oder vollständig KI-gestützte Tools und Technologien eingesetzt.
